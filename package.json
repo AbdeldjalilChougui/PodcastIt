@@ -1,0 +1,28 @@
+{
+  "name": "podcastit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PodcastIt — turn any article, PDF or text into a two-host podcast episode. An Anna AI OS app.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode mock",
+    "build": "tsc --noEmit && vite build",
+    "build:mock": "vite build --mode mock --outDir dist-mock",
+    "preview:mock": "vite preview --mode mock --outDir dist-mock",
+    "test": "vitest run",
+    "validate": "anna-app validate --strict",
+    "check:browser": "node scripts/browser-check.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.5.438",
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@anna-ai/cli": "^0.1.68",
+    "playwright-core": "^1.65.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

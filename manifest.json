@@ -1,0 +1,39 @@
+{
+  "schema": 4,
+  "required_executas": [],
+  "optional_executas": [],
+  "system_prompt_addendum": "PodcastIt turns articles, web pages, PDFs and pasted text into a two-host podcast episode (curious host + expert host) with chapters, a synced transcript and a personal library. When the user asks to turn a link or some text into a podcast, audio episode or something to listen to, open the PodcastIt window with open_app_view (view 'main') and pass a payload such as {\"url\": \"<link>\"} or {\"text\": \"<text>\"}, optionally with \"lengthMin\" (3, 8 or 15), \"tone\" (\"casual\", \"deep-dive\" or \"kids\") and \"language\" (\"en\", \"fr\", \"ar\" or \"es\"). The window pre-fills the form and the user presses 'Make my episode' (it uses their Anna credits). Do not write the podcast script in chat yourself.",
+  "tags": ["podcast", "audio", "learning", "reading", "tts", "summaries", "education"],
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": []
+    },
+    "form_factors": ["desktop", "mobile"],
+    "views": [
+      {
+        "name": "main",
+        "title": "PodcastIt",
+        "default": true,
+        "entry": "index.html",
+        "min_size": { "w": 360, "h": 520 },
+        "default_size": { "w": 760, "h": 840 },
+        "max_size": { "w": 1280, "h": 1400 },
+        "resizable": true,
+        "movable": true,
+        "single_instance": true,
+        "icon": "icon.svg"
+      }
+    ],
+    "browser_permissions": ["autoplay"],
+    "csp_overrides": {
+      "media-src": ["https:"]
+    },
+    "state_merge": "last_writer_wins"
+  },
+  "dev": {
+    "seed_storage": {},
+    "user_id": 1
+  }
+}

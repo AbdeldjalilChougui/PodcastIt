@@ -1,0 +1,11 @@
+{
+  "slug": "podcastit",
+  "name": "PodcastIt",
+  "version": "1.0.0",
+  "tagline": "Turn any article, PDF or text into a two-host podcast episode with chapters and a transcript.",
+  "description": "See submission/store-listing.md for the full store description (paste it into the Listing tab).",
+  "category": "education",
+  "homepage_url": "https://github.com/AbdeldjalilChougui/PodcastIt",
+  "support_url": "https://github.com/AbdeldjalilChougui/PodcastIt/issues",
+  "privacy_url": "https://github.com/AbdeldjalilChougui/PodcastIt/blob/main/PRIVACY.md"
+}
